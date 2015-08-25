@@ -9,6 +9,13 @@
 
 ?>
 <div class="top-bar-container contain-to-grid show-for-medium-up">
+    <div class="social-bar">
+        <div class="row">
+            <div class="large-12 large-centered columns">
+                <?php foundationpress_top_bar_l(); ?>
+            </div>
+        </div>
+    </div>  
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
         <?php if( get_theme_mod( 'mainstreet_logo') ) : ?>
@@ -30,7 +37,6 @@
         </ul>
         <section class="top-bar-section">
             <?php foundationpress_top_bar_r(); ?>
-            <?php foundationpress_top_bar_l(); ?>
         </section>
     </nav>
 </div>
