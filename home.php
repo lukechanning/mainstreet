@@ -6,7 +6,16 @@ get_header();
 
 <?php //Let's add our Hero section ?>
   
-  <section class="hero">
+  <section class="hero" style="
+    <?php
+      if( get_theme_mod( 'mainstreet_hero_bg') ) :
+        echo 'background-image:url(' . esc_url( get_theme_mod( 'mainstreet_hero_bg' ) ) . ');';
+      else : 
+        echo 'background-image: url(/wp-content/themes/mainstreet/assets/img/hero-bg.jpg);"';
+      endif;
+    ?>
+    ">
+    <?php get_template_part( 'parts/hero' ); ?>
   </section>
 
 <?php //Now, let's throw in our middle text & photo section ?>

@@ -1,20 +1,97 @@
-#homepage-hero {
-	background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
-	padding: rem-calc(20) 0;
-	margin: - rem-calc(32) 0 rem-calc(32);
-	position: relative;
-	text-align: left;
-	height: auto;
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 76vh;
+  text-align: center;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,rgba(230,230,230,0.8),#333333);
+		opacity: .8; 
+  }
+  .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .tech-img {
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 40.063em) {
+    .tech-img {
+      height: 18rem;
+      width: 18rem;
+    }
+    h1 {
+      padding-top: 2.5rem;
+      text-align: right;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: right;
+    }
+  }
+  
+  //Add unique button set for cool factor
+  .button-group {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 0;
+    &:before {
+      content: attr(data-grouptype);
+      z-index: 99999;
+      color: #999;
+      display: block;
+      font-size: 1.2rem;
+      padding: 0.25em;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      left: 43.5%;
+      top: 0.35rem;
+    }
+    button {
+      font-size: 1.2rem;
+      + button {
+        margin-left: 5px;
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .button-group:before {
+      display: none;
+    }
+  }
 
-		h1 { font-weight: 500; }
-
-		h1 a, h4 { color: #fff; }
-
-		.floatingyeti img {
-			max-width: 30%;
-			position: absolute;
-			right: rem-calc(100);
-		}
-
-		.download { margin-top: rem-calc(20); }
-	}
+  
+}
