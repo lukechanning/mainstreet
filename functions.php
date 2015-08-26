@@ -48,4 +48,7 @@ require_once( 'library/custom-header.php' );
 /** Add Nav Options to Customer */
 require_once( 'library/custom-nav.php' );
 
+/** Return customizer info */
+require_once( 'library/custom-o-matic.php' );
+
 ?>

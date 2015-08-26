@@ -19,8 +19,15 @@
     }
   }
   
-  .top-bar .name {
-  	h1 a { font-weight: 500; }
+  .top-bar {
+    .name {
+  	  h1 a { font-weight: 500; }
+    }
+   .toggle-topbar.menu-icon {
+      a, span:after {
+        color: $black;
+      }
+    }
   }
   
 // Let's make that top social bar awesome
@@ -82,7 +89,7 @@
 
 // Let's define the logo size
   .logo {
-    width: 40px;
+    width: 150px;
     margin-left: 5px;
   }
 
@@ -96,7 +103,16 @@
   }
   
   .logo {
-    width: 70px;
-    margin-top: -2.3rem;
+    width: 200px;
+    margin-top: -1.5rem;
+  }
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+  .top-bar-container {
+    display: block !important;
+    .logo {
+      padding-bottom: 1rem;
+    }
   }
 }
