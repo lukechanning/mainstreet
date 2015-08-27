@@ -20,12 +20,13 @@ get_header();
 
 <?php //Now, let's throw in our middle text & photo section ?>
 
-  <section class="home-middle">
+  <section class="middle">
+    <?php get_template_part('parts/middle'); ?>
   </section>
   
 <?php //Time to round it all out with a Home CTA section ?>
 
-  <section class="home-cta">
+  <section class="cta">
   </section>
 
 <?php
