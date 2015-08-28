@@ -28,6 +28,7 @@
       				//Time to close it out!
       				echo '</div></div>';
       	endwhile;
+      	wp_reset_query();
       ?>
       
   </div>
