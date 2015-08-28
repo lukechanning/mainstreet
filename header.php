@@ -24,7 +24,9 @@
 
 		<!-- Let's get some delicious icons -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-
+		<!-- And an Owl Carousel while we're at it -->
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/owl.carousel.css" />
+		
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

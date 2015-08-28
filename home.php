@@ -24,6 +24,11 @@ get_header();
     <?php get_template_part('parts/middle'); ?>
   </section>
   
+<?php //Let's pull in some product-specific bits here -- but classy ?>
+  <section class="product-wheel">
+    <?php get_template_part('parts/product-wheel'); ?>
+  </section>
+  
 <?php //Time to round it all out with a Home CTA section ?>
 
   <section class="cta">
