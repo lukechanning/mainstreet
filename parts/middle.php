@@ -21,7 +21,7 @@
               <?php the_content(); ?>
             </div>
             <div class="action">
-              <a href="<?php echo esc_url( get_permalink(1) ); ?>">See More</a>
+              <a href="<?php echo esc_url( get_permalink() ); ?>">See More</a>
             </div>
             
       				<?php

@@ -1,0 +1,42 @@
+//Boot her up!
+section.product-wheel {
+    
+    //Head to the woods and style some Owl Carousel
+    .owl-carousel {
+        .owl-controls {
+            display: none;
+        }
+        .owl-item {
+            background-image: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png);
+            background-size: cover;
+        }
+    }
+    
+    //Make the product title super flashy
+    .product-title {
+        display: none;
+        position: absolute;
+        margin: auto;
+        height: 25px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 1px 3px rgba(25,25,25,0.55);
+    }
+    
+    .owl-item:hover {
+        .product-title {
+            display: block;
+        }
+        img {
+            opacity: 0.5;
+        }
+    }
+    
+}
