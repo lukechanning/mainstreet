@@ -106,5 +106,52 @@ add_action( 'customize_register', 'mainstreet_custom_register' );
     
     }
     add_action( 'init', 'product_post_type', 0 );
+    
+//Let's add a custom post type for gifts
+
+    // Register Custom Post Type
+    function gift_registry() {
+    
+    	$labels = array(
+    		'name'                => _x( 'Gifts', 'Post Type General Name', 'text_domain' ),
+    		'singular_name'       => _x( 'Gift', 'Post Type Singular Name', 'text_domain' ),
+    		'menu_name'           => __( 'Gifts', 'text_domain' ),
+    		'name_admin_bar'      => __( 'Gifts', 'text_domain' ),
+    		'parent_item_colon'   => __( 'Parent Gift: ', 'text_domain' ),
+    		'all_items'           => __( 'All Gifts', 'text_domain' ),
+    		'add_new_item'        => __( 'Add New Gift', 'text_domain' ),
+    		'add_new'             => __( 'Add Gift', 'text_domain' ),
+    		'new_item'            => __( 'New Gift', 'text_domain' ),
+    		'edit_item'           => __( 'Edit Gift', 'text_domain' ),
+    		'update_item'         => __( 'Update Gift', 'text_domain' ),
+    		'view_item'           => __( 'View Gift', 'text_domain' ),
+    		'search_items'        => __( 'Search Gift', 'text_domain' ),
+    		'not_found'           => __( 'No Gift Found', 'text_domain' ),
+    		'not_found_in_trash'  => __( 'No gift in trash ', 'text_domain' ),
+    	);
+    	$args = array(
+    		'label'               => __( 'Gift', 'text_domain' ),
+    		'description'         => __( 'Add Gift Registry items in multiple categories', 'text_domain' ),
+    		'labels'              => $labels,
+    		'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions', ),
+    		'taxonomies'          => array( 'category', 'post_tag' ),
+    		'hierarchical'        => false,
+    		'public'              => true,
+    		'show_ui'             => true,
+    		'show_in_menu'        => true,
+    		'menu_position'       => 5,
+    		'show_in_admin_bar'   => true,
+    		'show_in_nav_menus'   => true,
+    		'can_export'          => true,
+    		'has_archive'         => true,		
+    		'exclude_from_search' => false,
+    		'publicly_queryable'  => true,
+    		'capability_type'     => 'page',
+    		'menu_icon'           => 'dashicons-tag',
+    	);
+    	register_post_type( 'gift_registry', $args );
+    
+    }
+    add_action( 'init', 'gift_registry', 0 );
 
 ?>
