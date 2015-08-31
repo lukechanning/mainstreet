@@ -39,7 +39,6 @@ function foundationpress_sidebar_widgets() {
 	  'after_widget' => '</div>',
 	));
 
-
 	register_sidebar(array(
 	  'id' => 'home-hero-buttons',
 	  'name' => __( 'Home Hero Buttons', 'foundationpress' ),
@@ -47,6 +46,23 @@ function foundationpress_sidebar_widgets() {
 	  'before_widget' => '<div class="button-group" data-grouptype="OR">',
 	  'after_widget' => '</div>',
 	));
+	
+	register_sidebar(array(
+	  'id' => 'footer-widget-one',
+	  'name' => __( 'Footer Widget #1', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to create our Footer Widget #1', 'foundationpress' ),
+	  'before_widget' => '<div class="small-12 medium-6 columns">',
+	  'after_widget' => '</div>',
+	));
+	
+	register_sidebar(array(
+	  'id' => 'footer-widget-two',
+	  'name' => __( 'Footer Widget #2', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to create our Footer Widget #2', 'foundationpress' ),
+	  'before_widget' => '<div class="small-12 medium-6 columns">',
+	  'after_widget' => '</div>',
+	));
+	
 }
 
 add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );
