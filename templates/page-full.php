@@ -26,4 +26,5 @@ get_header(); ?>
 	</div>
 </div>
 
+<?php get_template_part('parts/cta'); ?>
 <?php get_footer(); ?>
