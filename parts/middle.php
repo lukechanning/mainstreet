@@ -5,7 +5,7 @@
       
      <?php
       //Let's start the query for our post
-      query_posts( array ( 'category_name' => 'home-featured', 'posts_per_page' => 8, 'order' => 'DESC' ) );
+      query_posts( array ( 'category_name' => 'home-featured', 'posts_per_page' => 6, 'order' => 'DESC' ) );
       	while (have_posts()) : the_post(); //Make sure there are posts to get
       			echo '<div class="grid-brick"><div class="card">';
       			if ( the_post_thumbnail() ):
