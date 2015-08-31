@@ -49,7 +49,7 @@ function foundationpress_sidebar_widgets() {
 	
 	register_sidebar(array(
 	  'id' => 'footer-widget-one',
-	  'name' => __( 'Footer Widget #1', 'foundationpress' ),
+	  'name' => __( 'Footer Widget Right', 'foundationpress' ),
 	  'description' => __( 'Add a text widget to create our Footer Widget #1', 'foundationpress' ),
 	  'before_widget' => '<div class="small-12 medium-6 columns">',
 	  'after_widget' => '</div>',
@@ -57,7 +57,7 @@ function foundationpress_sidebar_widgets() {
 	
 	register_sidebar(array(
 	  'id' => 'footer-widget-two',
-	  'name' => __( 'Footer Widget #2', 'foundationpress' ),
+	  'name' => __( 'Footer Widget Left', 'foundationpress' ),
 	  'description' => __( 'Add a text widget to create our Footer Widget #2', 'foundationpress' ),
 	  'before_widget' => '<div class="small-12 medium-6 columns">',
 	  'after_widget' => '</div>',
