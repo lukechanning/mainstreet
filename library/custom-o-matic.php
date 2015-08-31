@@ -43,6 +43,20 @@ function mainstreet_custom_register( $wp_customize ) {
     'section' => 'mainstreet_hero_bg_section',
     'settings' => 'mainstreet_hero_bg',
     ) ) );
+    
+    //Add CTA BG
+    $wp_customize->add_section( 'mainstreet_cta_bg_section' , array(
+    'title'       => __( 'mainstreet CTA BG', 'mainstreet' ),
+    'priority'   => 30,
+    'description' => 'Upload an image to add to the CTA section on most pages',
+    ) );
+    $wp_customize->add_setting( 'mainstreet_cta_bg' );
+    $wp_customize->add_control( new WP_Customize_Image_Control(
+    $wp_customize, 'mainstreet_cta_bg', array(
+    'label'   => __( 'CTA BG', 'themeslug' ),
+    'section' => 'mainstreet_cta_bg_section',
+    'settings' => 'mainstreet_cta_bg',
+    ) ) );
 
 }
 add_action( 'customize_register', 'mainstreet_custom_register' );

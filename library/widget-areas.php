@@ -48,6 +48,16 @@ function foundationpress_sidebar_widgets() {
 	));
 	
 	register_sidebar(array(
+	  'id' => 'cta-content',
+	  'name' => __( 'Call to Action', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to display the CTA Content on most pages', 'foundationpress' ),
+	  'before_widget' => '<div class="callout-card-content">',
+	  'after_widget' => '</div>',
+	  'before_title' => '<h3 class="lead">',
+	  'after_title' => '</h3>'
+	));
+	
+	register_sidebar(array(
 	  'id' => 'footer-widget-one',
 	  'name' => __( 'Footer Widget Right', 'foundationpress' ),
 	  'description' => __( 'Add a text widget to create our Footer Widget #1', 'foundationpress' ),

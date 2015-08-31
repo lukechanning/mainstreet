@@ -28,11 +28,6 @@ get_header();
   <section class="product-wheel">
     <?php get_template_part('parts/product-wheel'); ?>
   </section>
-  
-<?php //Time to round it all out with a Home CTA section ?>
-
-  <section class="cta">
-  </section>
 
 <?php
   get_footer();
