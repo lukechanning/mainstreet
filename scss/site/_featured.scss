@@ -1,0 +1,31 @@
+section.featured {
+    background: #f6f6f6;
+    .features {
+    	text-align: center;
+    	hr {
+    		width: 25%;
+    		margin: 1rem auto;
+    	}
+    	.round-icon {
+    	    background-color: $blue;
+            border-radius: 50%;
+            display: table;
+            height: rem-calc(100);
+            margin: rem-calc(-43) auto 1rem;
+            width: rem-calc(100);
+            font-size: 3rem;
+            box-shadow: 2px 2px 5px $crazyEights;
+          span {
+            color: #fff;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+          	}
+	    }
+    	@media only screen and (max-width: 40em) {
+    		.columns {
+    			margin-bottom: 5rem;
+    		}
+    	}
+    }
+}

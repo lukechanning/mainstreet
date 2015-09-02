@@ -17,6 +17,12 @@ get_header();
     ">
     <?php get_template_part( 'parts/hero' ); ?>
   </section>
+  
+<?php //Let's add the cool section for featured bits ?>
+
+  <section class="featured">
+    <?php get_template_part('parts/featured'); ?>
+  </section>
 
 <?php //Now, let's throw in our middle text & photo section ?>
 
