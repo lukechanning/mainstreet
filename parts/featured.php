@@ -3,32 +3,20 @@
 ?>
     <div class="row features">
         
-      <div class="medium-4 columns">
-        <div class="round-icon">
-          <span class="fi-widget"></span>
-        </div>
-        <h3>Adipiscing Elit</h3>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus.</p>
-      </div>
-      
-      <div class="medium-4 columns">
-        <div class="round-icon">
-          <span class="fi-graph-bar"></span>
-        </div>
-        <h3>Adipiscing Elit</h3>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus.</p>
-      </div>
-      
-      <div class="medium-4 columns">
-        <div class="round-icon">
-          <span class="fi-download"></span>
-        </div>
-        <h3>Adipiscing Elit</h3>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus.</p>
-      </div>
+      <?php 
+        // Let's get number one! 
+        if (! dynamic_sidebar('homer-featured-one')):
+          dynamic_sidebar('home-featured-one');
+        endif;
+        
+        if (! dynamic_sidebar('homer-featured-two')):
+          dynamic_sidebar('home-featured-two');
+        endif;
+        
+        if (! dynamic_sidebar('homer-featured-three')):
+          dynamic_sidebar('home-featured-three');
+        endif;
+      ?>
       
     </div>
 

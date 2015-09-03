@@ -48,6 +48,30 @@ function foundationpress_sidebar_widgets() {
 	));
 	
 	register_sidebar(array(
+	  'id' => 'home-featured-one',
+	  'name' => __( 'Home Featured One', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to appear in the Home Featured section', 'foundationpress' ),
+	  'before_widget' => '<div class="medium-4 columns">',
+	  'after_widget' => '</div>',
+	));
+	
+	register_sidebar(array(
+	  'id' => 'home-featured-two',
+	  'name' => __( 'Home Featured Two', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to appear in the Home Featured section', 'foundationpress' ),
+	  'before_widget' => '<div class="medium-4 columns">',
+	  'after_widget' => '</div>',
+	));
+	
+	register_sidebar(array(
+	  'id' => 'home-featured-three',
+	  'name' => __( 'Home Featured Three', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to appear in the Home Featured section', 'foundationpress' ),
+	  'before_widget' => '<div class="medium-4 columns">',
+	  'after_widget' => '</div>',
+	));
+	
+	register_sidebar(array(
 	  'id' => 'cta-content',
 	  'name' => __( 'Call to Action', 'foundationpress' ),
 	  'description' => __( 'Add a text widget to display the CTA Content on most pages', 'foundationpress' ),

@@ -992,4 +992,4 @@ Like masonry column shift, but works. */
             });
     });
 
-})(window.jQuery || window.Zepto);
+})(window.jQuery);
