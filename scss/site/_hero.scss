@@ -18,8 +18,8 @@
   .intro {
     padding: 3rem;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: rem-calc(80px);
+    top: 8vh;
   }
   h1 {
     color: #fff;
